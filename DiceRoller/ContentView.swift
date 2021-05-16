@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var resultsList = ResultsList()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        TabView{
+            DiceView()
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Dice")
+                }
+            ResultsView()
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Results")
+                }
+        }
+        .environmentObject(resultsList)
     }
 }
 

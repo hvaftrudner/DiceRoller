@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreDataDice" representedClassName="CoreDataDice" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="roll" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sides" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoreDataResult" inverseName="dice" inverseEntity="CoreDataResult"/>
+    </entity>
+    <entity name="CoreDataResult" representedClassName="CoreDataResult" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="result" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="dice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CoreDataDice" inverseName="result" inverseEntity="CoreDataDice"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="CoreDataDice" positionX="-54" positionY="9" width="128" height="89"/>
+        <element name="CoreDataResult" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
 </model>

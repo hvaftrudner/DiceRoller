@@ -14,6 +14,14 @@
 		E002378C264DDEAE00E42E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E002378B264DDEAE00E42E63 /* Assets.xcassets */; };
 		E002378F264DDEAE00E42E63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E002378E264DDEAE00E42E63 /* Preview Assets.xcassets */; };
 		E0023792264DDEAE00E42E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0023790264DDEAE00E42E63 /* LaunchScreen.storyboard */; };
+		E002379A264DDF2A00E42E63 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0023799264DDF2A00E42E63 /* DiceView.swift */; };
+		E002379C264DDF4C00E42E63 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002379B264DDF4C00E42E63 /* ResultsView.swift */; };
+		E00237A2264DECD900E42E63 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00237A1264DECD900E42E63 /* Dice.swift */; };
+		E0AD817E2651727300E3C028 /* CoreDataResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD817A2651727300E3C028 /* CoreDataResult+CoreDataClass.swift */; };
+		E0AD817F2651727300E3C028 /* CoreDataResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD817B2651727300E3C028 /* CoreDataResult+CoreDataProperties.swift */; };
+		E0AD81802651727300E3C028 /* CoreDataDice+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD817C2651727300E3C028 /* CoreDataDice+CoreDataClass.swift */; };
+		E0AD81812651727300E3C028 /* CoreDataDice+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AD817D2651727300E3C028 /* CoreDataDice+CoreDataProperties.swift */; };
+		E0CD88D4264F39A500BBEA70 /* DiceResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CD88D3264F39A500BBEA70 /* DiceResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		E002378E264DDEAE00E42E63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E0023791264DDEAE00E42E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0023793264DDEAE00E42E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0023799264DDF2A00E42E63 /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		E002379B264DDF4C00E42E63 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		E00237A1264DECD900E42E63 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		E0AD817A2651727300E3C028 /* CoreDataResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataResult+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E0AD817B2651727300E3C028 /* CoreDataResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataResult+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E0AD817C2651727300E3C028 /* CoreDataDice+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataDice+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E0AD817D2651727300E3C028 /* CoreDataDice+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataDice+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E0CD88D3264F39A500BBEA70 /* DiceResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +74,17 @@
 		E0023781264DDEAE00E42E63 /* DiceRoller */ = {
 			isa = PBXGroup;
 			children = (
+				E0AD817A2651727300E3C028 /* CoreDataResult+CoreDataClass.swift */,
+				E0AD817B2651727300E3C028 /* CoreDataResult+CoreDataProperties.swift */,
+				E0AD817C2651727300E3C028 /* CoreDataDice+CoreDataClass.swift */,
+				E0AD817D2651727300E3C028 /* CoreDataDice+CoreDataProperties.swift */,
 				E0023782264DDEAE00E42E63 /* AppDelegate.swift */,
 				E0023784264DDEAE00E42E63 /* SceneDelegate.swift */,
 				E0023786264DDEAE00E42E63 /* ContentView.swift */,
+				E0023799264DDF2A00E42E63 /* DiceView.swift */,
+				E00237A1264DECD900E42E63 /* Dice.swift */,
+				E0CD88D3264F39A500BBEA70 /* DiceResults.swift */,
+				E002379B264DDF4C00E42E63 /* ResultsView.swift */,
 				E002378B264DDEAE00E42E63 /* Assets.xcassets */,
 				E0023790264DDEAE00E42E63 /* LaunchScreen.storyboard */,
 				E0023793264DDEAE00E42E63 /* Info.plist */,
@@ -149,6 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E002378A264DDEAE00E42E63 /* DiceRoller.xcdatamodeld in Sources */,
+				E00237A2264DECD900E42E63 /* Dice.swift in Sources */,
+				E002379C264DDF4C00E42E63 /* ResultsView.swift in Sources */,
+				E0AD81812651727300E3C028 /* CoreDataDice+CoreDataProperties.swift in Sources */,
+				E0AD817F2651727300E3C028 /* CoreDataResult+CoreDataProperties.swift in Sources */,
+				E0CD88D4264F39A500BBEA70 /* DiceResults.swift in Sources */,
+				E002379A264DDF2A00E42E63 /* DiceView.swift in Sources */,
+				E0AD817E2651727300E3C028 /* CoreDataResult+CoreDataClass.swift in Sources */,
+				E0AD81802651727300E3C028 /* CoreDataDice+CoreDataClass.swift in Sources */,
 				E0023783264DDEAE00E42E63 /* AppDelegate.swift in Sources */,
 				E0023785264DDEAE00E42E63 /* SceneDelegate.swift in Sources */,
 				E0023787264DDEAE00E42E63 /* ContentView.swift in Sources */,
